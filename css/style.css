@@ -8,6 +8,9 @@
 .section-title{
     color: #0088ca !important;
 }
+.mb-1, .mb-2{
+    color: #dadade !important;
+}
 .fw-semi-bold{
     color: #dadade !important;
 }
@@ -137,6 +140,9 @@
     .navbar .navbar-nav .nav-link  {
         margin-right: 0;
         padding: 10px 0;
+    }
+    iframe{
+        width: 100% !important;
     }
 
     .navbar .navbar-nav {
@@ -543,4 +549,9 @@
 }
 .carousel-caption{
     background-color: rgba(0, 0, 0, .6);
+}
+.icon-features{
+    color: #fff;
+    font-size: 65px;
+    margin-bottom: 23px;
 }
