@@ -23,7 +23,7 @@
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <!-- <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet"> -->
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -64,7 +64,7 @@
 
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-light bg-white navbar-expand-lg sticky-top px-4 px-lg-5">
+    <!-- <nav class="navbar navbar-light bg-white navbar-expand-lg sticky-top px-4 px-lg-5">
         <a href="index.html" class="navbar-brand d-flex align-items-center">
             <img src="./img/acsc-transparent.png" alt="icon" style="height:70px; margin-right: 10px;"/>
             <h5 class="m-0 mobile-hide">ACSC</h5>
@@ -83,7 +83,57 @@
                 <a href="#contact" class="nav-item nav-link">Hubungi Kami</a>
             </div>
         </div>
-    </nav>
+    </nav> -->
+    <div class="menu">
+        <div class="brand">
+            <img src="./img/acsc-transparent.png" alt="icon" style="height:70px; margin-right: 10px;"/>
+            <h5 class="m-0 mobile-hide">ACSC</h5>
+            <h5 class="m-0 desktop-hide">Alphakid Character Studies Centre</h5>
+        </div>
+        <div class="menu-bar mobile-hide"><span class="fa fa-bars"></span></div>
+        <div class="menu-list-modal-backdrop mobile-hide"></div>
+        <div class="menu-list-modal mobile-hide">
+            <div class="close-button"><span class="fa fa-times"></span></div>
+            <a href="#home">
+                <div class="menu-item">Beranda</div>
+            </a>
+            <a href="#about">
+                <div class="menu-item">Tentang Kami</div>
+            </a>
+            <a href="#extra">
+                <div class="menu-item">Extra Class</div>
+            </a>
+            <a href="#activity">
+                <div class="menu-item">Aktivitas</div>
+            </a>
+            <a href="#team">
+                <div class="menu-item">Staf & Guru</div>
+            </a>
+            <a href="#contact">
+                <div class="menu-item">Hubungi Kami</div>
+            </a>
+        </div>
+        <div class="menu-list">
+            <a href="#home">
+                <div class="menu-item">Beranda</div>
+            </a>
+            <a href="#about">
+                <div class="menu-item">Tentang Kami</div>
+            </a>
+            <a href="#extra">
+                <div class="menu-item">Extra Class</div>
+            </a>
+            <a href="#activity">
+                <div class="menu-item">Aktivitas</div>
+            </a>
+            <a href="#team">
+                <div class="menu-item">Staf & Guru</div>
+            </a>
+            <a href="#contact">
+                <div class="menu-item">Hubungi Kami</div>
+            </a>
+        </div>
+    </div>
     <!-- Navbar End -->
 
 
@@ -93,16 +143,16 @@
         <div id="header-carousel" class="carousel" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active" style="position: relative;">
-                    <video autoplay muted loop class="w-100">
+                    <!-- <video autoplay muted loop class="w-100">
                         <source src="video/home.mp4" type="video/mp4">
-                    </video>
-                    <!-- <img class="w-100" src="img/carousel-1.jpg" alt="Image"> -->
+                    </video> -->
+                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-start">
-                                <div class="col-lg-8 text-start">
+                                <div class="center">
                                     <p class="fs-4 text-white">ACSC Preshool & Daycare</p>
-                                    <h1 class="display-1 text-white mb-5 animated slideInRight">Sekolah dengan Program Terbaik Dunia </h1>
+                                    <h1 class="display-1 text-white mb-5 animated slideInRight">Program Terbaik untuk Anak Usia Dini </h1>
                                     <a href="#about" class="btn btn-secondary rounded-pill py-3 px-5 animated slideInRight">Kenali Kami</a>
                                 </div>
                             </div>
@@ -149,7 +199,7 @@
                     <div class="row g-2">
                         <div class="col-6 position-relative wow fadeIn" data-wow-delay="0.7s">
                             <div class="about-experience bg-secondary rounded">
-                                <h1 class="display-1 mb-0">10</h1>
+                                <h1 class="display-1 mb-0" id="tahun-pengalaman"></h1>
                                 <small class="fs-5 fw-bold">Tahun Pengalaman</small>
                             </div>
                         </div>
@@ -452,6 +502,52 @@
     </section>
     <!-- Product End -->
 
+    <!-- Product Start -->
+    <section>
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                    <p class="section-title bg-white text-center text-primary px-3">Jadwal Kami</p>
+                    <h1 class="mb-5">Preschool & Daycare</h1>
+                </div>
+                <table class="table" style="margin: 0 auto; position: relative; width: 80%;">
+                    <thead>
+                        <tr>
+                            <th>Jenis Kelas</th>
+                            <th>Nama Kelas</th>
+                            <th>Waktu Pelaksanaan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="4">Preschool</td>
+                            <td>Platypus Class</td>
+                            <td>08.00-10.00</td>
+                        </tr>
+                        <tr>
+                            <td>Koala Class</td>
+                            <td>08.00-10.00</td>
+                        </tr>
+                        <tr>
+                            <td>Kangaroo Small Class</td>
+                            <td>08.00 - 10.30</td>
+                        </tr>
+                        <tr>
+                            <td>Kangaroo Big Class</td>
+                            <td>08.00 - 11.00</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Daycare</td>
+                            <td>08.00 - 16.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- Product End -->
+
 
     <!-- Team Start -->
     <section id="team">
@@ -459,27 +555,27 @@
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <p class="section-title bg-white text-center text-primary px-3">Staf dan Guru</p>
-                <h1 class="mb-5">Tim yang Kredibel dan Berintegritas</h1>
+                <h1 class="mb-5">Preschool</h1>
             </div>
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item rounded p-4">
                         <img class="img-fluid rounded mb-4" src="img/team-1.jpg" alt="">
-                        <h5>Ms. Dilla</h5>
+                        <h5>Nuril Fadhilah Febriyanti, S.Pd <br> (Ms. Dhila)</h5>
                         <p class="text-primary">Principle</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item rounded p-4">
                         <img class="img-fluid rounded mb-4" src="img/team-2.jpg" alt="">
-                        <h5>Ms. Dea</h5>
+                        <h5>Dea Ayu Riasita, S.Psi <br>(Ms. Dea)</h5>
                         <p class="text-primary">Vice Principle</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item rounded p-4">
                         <img class="img-fluid rounded mb-4" src="img/team-3.jpg" alt="">
-                        <h5>Ms. Tika</h5>
+                        <h5>Andriana Astika Sari, S.Si <br>(Ms. Tika)</h5>
                         <p class="text-primary">Teacher Class</p>
                     </div>
                 </div>
@@ -488,14 +584,14 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item rounded p-4">
                         <img class="img-fluid rounded mb-4" src="img/team-4.jpg" alt="">
-                        <h5>Ms. Lia</h5>
+                        <h5>Olivia Fryda Triningtyas, S.Pd <br> (Ms. Lia)</h5>
                         <p class="text-primary">Teacher Class</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item rounded p-4">
                         <img class="img-fluid rounded mb-4" src="img/team-5.jpg" alt="">
-                        <h5>Ms. Nabila</h5>
+                        <h5>Nabila Jazilatur Rokhmah, S.Pd <br> (Ms. Nabila)</h5>
                         <p class="text-primary">Teacher Class</p>
                     </div>
                 </div>
@@ -518,14 +614,14 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item rounded p-4">
                         <img class="img-fluid rounded mb-4" src="img/team-8.jpg" alt="">
-                        <h5>Ms. Hanum</h5>
+                        <h5>Hanum Megawati, A.Md. <br> (Ms. Hanum)</h5>
                         <p class="text-primary">Admin</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item rounded p-4">
                         <img class="img-fluid rounded mb-4" src="img/team-9.jpg" alt="">
-                        <h5>Pak Kikit</h5>
+                        <h5>Kikit Pudjiatmoko <br> (Pak Kikit)</h5>
                         <p class="text-primary">Officer</p>
                     </div>
                 </div>

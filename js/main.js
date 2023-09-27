@@ -1,6 +1,6 @@
 (function ($) {
     "use strict";
-    window.location.replace("#home");
+    // window.location.replace("#home");
     // Spinner
     var spinner = function () {
         setTimeout(function () {
@@ -60,6 +60,21 @@
             '<i class="bi bi-chevron-right"></i>'
         ]
     });
+
+    $(".menu-bar").click( () => {
+        $(".menu-list-modal").show(400);
+        $(".menu-list-modal-backdrop").show();
+    })
+    $(".close-button").click( () => {
+        $(".menu-list-modal").hide(400);
+        $(".menu-list-modal-backdrop").hide();
+    })
+    $(".menu-item").click( () => {
+        $(".menu-list-modal").hide(400);
+        $(".menu-list-modal-backdrop").hide();
+    })
+    const y = new Date().getFullYear();
+    $("#tahun-pengalaman").html(y-2010);
 
     
 })(jQuery);

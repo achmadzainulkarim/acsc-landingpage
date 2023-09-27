@@ -5,8 +5,17 @@
     --light: #F7F7F7;
     --dark: #404A3D;
 }
+.navbar{
+    background: url("img/carousel-1.jpg");
+}
 .section-title{
     color: #0088ca !important;
+}
+.fs-4, .display-1{
+    color: #1d5d97 !important;
+}
+.mb-0{
+    color: #fff !important;
 }
 .mb-1, .mb-2{
     color: #dadade !important;
@@ -22,8 +31,9 @@
     background-color: #1d5d97 !important;
     color: #fff !important;
 }
-.display-6, .display-1{
+.display-6{
     color: #fff !important;
+    font-size: 22px;
 }
 
 .back-to-top {
@@ -105,6 +115,7 @@
     align-items: center;
     justify-content: center;
     font-weight: normal;
+    z-index: 1;
 }
 
 
@@ -137,6 +148,30 @@
     margin-left: 8px;
 }
 
+.menu {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    padding: 10px;
+    background:url("../img/client.png");
+    background-size: auto 100px;
+    background-repeat: repeat-x;
+    background-color: transparent;
+    /* background-color: #b3e6ff; */
+}
+.menu > .brand{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 @media (max-width: 991.98px) {
     .navbar .navbar-nav .nav-link  {
         margin-right: 0;
@@ -160,6 +195,76 @@
     }
     .desktop-hide{
         display: none;
+    }
+    .px-0{
+        padding-top:50px;
+    }
+    .menu {
+        height: 70px;
+        background-size: auto 70px;
+    }
+    .menu > .menu-bar{
+        font-size: 20px;
+        margin-right: 10px;
+    }
+    .menu > .menu-list-modal-backdrop{
+        display: none;
+        position: absolute;
+        background: rgba(0,0,0,0.6);
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        right: 0;
+        z-index: 9;
+    }
+    .close-button{
+        width: 100%;
+        text-align: right;
+        padding: 20px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .menu > .menu-list-modal{
+        display: none;
+        position: absolute;
+        background: #fff;
+        height: 100vh;
+        width: 70vw;
+        top: 0;
+        right: 0;
+        z-index: 10;
+    }
+    .menu > .menu-list-modal > a{
+        color: unset;
+        width: 100vw;
+        display: flex;
+        height: 50px;
+        padding: 10px;
+        border-bottom: 1px solid #dadade;
+    }
+    .menu > .menu-list{
+        display: none;
+        /* background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center; */
+    }
+    .menu > .menu-list > a > .menu-item{
+        /* background-color: transparent;
+        height: 100px;
+        display: flex;
+        color: #0088ca;
+        font-weight: bold;
+        align-items: center;
+        padding: 0px 10px; */
+    }
+    .menu > .menu-list > a > .menu-item:hover{
+        /* background-color: #0088ca;
+        color: #fff; */
+    }
+    .menu .brand, .menu .menu-list {
+        /* background-color: transparent !important; Set the background to transparent for .brand and .menu-list */
     }
 }
 
@@ -187,6 +292,30 @@
     }
     .mobile-hide{
         display: none;
+    }
+    /* MENU CUSTOM */
+    .menu > .menu-list{
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .menu > .menu-list > a > .menu-item{
+        background-color: transparent;
+        height: 100px;
+        display: flex;
+        color: #0088ca;
+        font-weight: bold;
+        align-items: center;
+        padding: 0px 10px;
+    }
+    .menu > .menu-list > a > .menu-item:hover{
+        background-color: #0088ca;
+        color: #fff;
+    }
+    .menu .brand, .menu .menu-list {
+        background-color: transparent !important; /* Set the background to transparent for .brand and .menu-list */
     }
 }
 
@@ -549,7 +678,7 @@
     box-shadow: none;
 }
 .carousel-caption{
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(255, 255, 255, .4);
 }
 .icon-features{
     color: #fff;
