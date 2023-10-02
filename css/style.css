@@ -685,3 +685,26 @@
     font-size: 65px;
     margin-bottom: 23px;
 }
+
+/* Gallery container */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  /* Gallery item styling */
+  .gallery-item {
+    width: 400px; /* Adjust the width of each image as needed */
+    height: auto;
+    margin: 10px;
+  }
+  
+  /* Optional: Add hover effect for images */
+  .gallery-item:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
