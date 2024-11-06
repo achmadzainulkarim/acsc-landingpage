@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="../img/acsc-transparent.png" rel="icon" />
+    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>ACSC Galleries</title>
+  </head>
+
+  <body style="background-image: url('../img/carousel-1.jpg')">
+    <div
+      class="w-full h-screen p-10 overflow-auto"
+      style="background: rgba(0, 0, 0, 0.1)"
+    >
+      <div class="w-100 flex row justify-center items-center">
+        <div class="w-100 flex column justify-center items-center">
+          <span class="text-4xl font-bold">ACSC Galleries</span>
+        </div>
+      </div>
+      <div class="w-100 mt-4">
+        <div class="grid grid-cols-4 gap-4">
+          <a class="bg-white rounded-lg shadow-lg p-2" href="./fieldtrip_bungkul">
+            <img
+              src="https://res.cloudinary.com/dbmyjab4h/image/upload/f_auto,q_auto/v1/acsc/hpis7neg4m1zrh9irgx7"
+              class="w-full h-64 rounded-t-lg"
+            />
+            <div class="p-2">
+              <span class="text-lg font-bold">Field Trip - Taman Bungkul</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="fixed bottom-[30px] left-[48%]">
+        <a href="../." class="border-[3px] border-blue-500 bg-blue-200 border-solid rounded-full flex justify-center items-center px-5 py-3 cursor-pointer">
+          <span class="text-blue-900"> Back to Home </span>
+        </a>
+      </div>
+  </body>
+</html>
